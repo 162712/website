@@ -1,0 +1,499 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,200&display=swap');");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.navbar {
+    background:black;
+    position: fixed;
+    width: 100%;
+    padding: 15px 30px;
+    font-family:'Poppins' sans-serif;
+    z-index: 999;
+}
+.sticky{
+    padding: 15px 30px;
+    background:red;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 20px;
+}
+.nav-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+  max-width: 1100px;
+}
+
+.nav-div ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-div ul li {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 20px;
+  
+}
+.centre {
+  justify-content: space-around;
+  align-self: start;
+}
+/* .navbar .logo  */
+.logo-name a {
+  color:white;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+/* .navbar .logo  */
+.logo-name a span{
+    color: red;
+}
+
+/* sticky lio.*/
+/* .navbar .logo  */
+.sticky .logo .logo-name a span{
+  color: black;
+}
+
+/* .navbar .logo  */
+.nav-div li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* .navbar .logo  */
+.nav-div li a {
+  color:white;
+  font-size: 18px;
+  font-weight: 100px;
+  transition: color 0.3s ease;
+}
+/* .navbar .logo  */
+.nav-div li a:hover{
+color:red;
+} 
+.nav-div .menu-button{
+color:white;
+font-size: 23px;
+cursor: cursor;
+display: none;
+}
+.scroll{
+position: fixed;
+height: 45px;
+width: 42px;
+background: red;
+right: 30px;
+bottom: 10px;
+text-align: center;
+line-height: 45px;
+color: white;
+z-index: 9999;
+font-size: 30px;
+border-radius: 6px;
+cursor: pointer;
+/* opacity: 0;
+pointer-events: none; */
+transition: all 0.3s ease;
+}
+.scroll .show{
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 30px;
+} 
+.home {
+  display: flex;
+  background: url("guys.jpeg") no-repeat center; 
+   background-size: 1790px 1250px; 
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  font-family: 'Poppins',sans-serif;
+}
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+/*.home .max-width .contents */
+.text-1 {
+    color: white;
+    font-size: 27px;
+    font-weight: 100px;
+}
+/*.home .max-width .contents */
+.text-2 {
+  color: white;
+    font-size: 57px;
+  font-weight: 600px;
+  margin-left: -3px;
+}
+/*.home .max-width .contents */ 
+.text-3 {
+    color:black;
+  font-size: 27px;
+  margin:5px 0;
+}
+/*.home .max-width .contents */
+.text-3 span{
+    color: red;
+    font-weight: 5000px;
+    font-size: 50px; ;
+}   
+/* about section */
+section{
+  padding: 100px 0;
+  position: relative;
+}
+.about{
+  font-family: 'Poppins',sans-serif;
+  margin: 50px 50px 50px 50px;
+}
+/* .about .max-width */.title{ 
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+.title::before{
+  content: "";
+  position: absolute;
+  bottom:0px;
+  left:50%;
+  width:180px;
+  height:3px;
+  background: black;
+  transform: translateX(-50%);
+}
+.title::after{
+  content: "who am I";
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  font-size: 20px;
+  color: red;
+  padding:5px;
+  background:white;
+  transform: translateX(-50%);
+}
+.about .max-width .contents-2 .column-left img{
+height:400px;
+width:400px;
+object-fit: cover;
+border-radius: 6px;
+/* margin-left: 50px;
+margin-right: 50px; */
+}
+.about .max-width .contents-2{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.about .max-width .contents-2 .column-left .img{
+  width: 40%;
+}
+.about .max-width .contents-2 .column-right {
+  width: 60%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.about .max-width .contents-2 .column-right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom:10px ;
+}
+.about .max-width .contents-2 .column-right .text span{
+  color: red;
+
+}
+.about .max-width .contents-2 .column-right p{
+  text-align: justify;
+}
+.about .max-width .contents-2 .column-right a{
+  text-align: justify;
+  display: inline-block;
+  background: red;
+  color: white;
+  margin-top: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.about .max-width .contents-2 .column-right a:hover{
+  color:red;
+  background: black;
+}
+/* services section */
+.services{
+  background: black;
+  /* margin-bottom: 30px; */
+}
+.services .title::after{
+  content: "what i offer";
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  font-size: 20px;
+  color:red;
+  padding:5px;
+  background:black;
+  transform: translateX(-50%);
+}
+.services .title::before{
+  content: "";
+  position: absolute;
+  bottom:0px;
+  left:50%;
+  width:180px;
+  height:3px;
+  background: white;
+  transform: translateX(-50%);
+}
+.services .max-width .title{ 
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+}
+.services .max-width .contents-3 {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.services .contents-3 .card {
+  width: calc(33%);
+  background:rgb(66, 60, 60);
+  text-align: center;
+  border-radius: 6px;
+  padding-left: 100px;
+  padding-right: 100px;
+  cursor: pointer;
+  color:white;
+  margin: 10px;
+}
+.services .contents-3 .card:hover {
+  width: calc(33%);
+  background:rgb(141, 29, 29);
+  text-align: center;
+  border-radius: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
+  cursor: pointer;
+  color:white;
+  margin: 10px;
+}
+.services .contents-3 .card .box{
+  transition: all 0.3s ease;
+ 
+}
+.services .contents-3 .card .box:hover {
+  transform:scale(1.05);
+}
+.services .contents-3 .card i{
+  background: red;
+  height: 20px;
+  width: 20px;
+ 
+}
+.services .contents-3 .card .text{
+  margin:10px 0 7px 0;
+  font-size: 25px;
+  font-weight: 100px;
+  color:white;
+}
+
+/* skills */
+.skills{
+  background:white;
+  /* margin: 50px 50px 50px 50px; */
+}
+.skills .title::after{
+  content: "what i have";
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  font-size: 12px;
+  color:red;
+  padding:10px;
+  background:white;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-seriff\;
+}
+.skills .title::before{
+  content: "";
+  position: absolute;
+  bottom:0px;
+  left:50%;
+  width:180px;
+  height:3px;
+  background: black;
+  transform: translateX(-50%);
+}
+.skills .max-width .title{ 
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Poppins',sans-serif;
+  color:#000000;
+}
+.skills .max-width .contents-4 {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 80px 80px 80px;
+}
+/* .skills .max-width .contents-4{
+  max-width: 50%;
+} */
+.skills .max-width .contents-4 .column-right{
+  width: calc(50%);
+}
+.skills .max-width .contents-4 .column-left{
+  width: calc(50%);
+}
+
+.skills .max-width .contents-4 .column-left .text{
+  font-size: 40px;
+  font-weight: 400px;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 10px 10px 10px;
+}
+
+.skills .max-width .contents-4 .column-left p{
+  font-weight: 50px;
+  font-size: 25px;
+  margin: 10px 10px 10px 10px ;
+}
+.skills .max-width .contents-4 .column-right .bars{
+  margin-bottom: 15px;
+}
+.skills .max-width .contents-4 .column-right .info{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .max-width .contents-4 .column-right span{
+  font-size: 20px;
+  font-weight: 200px;
+  padding-top: 10px;
+  padding-bottom: 2px ;
+}
+.skills .max-width .contents-4 .column-right .line{
+  height: 5px;
+  width: 100%;
+  background: blanchedalmond;
+  position: relative;
+}
+.skills .max-width .contents-4 .column-right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: red;
+  color: red;
+}
+/* .skills .max-width .contents-4 .column-right .line::after{
+  background: red;
+} */
+/* .skills .max-width .contents-4 .column-right .java ::before{
+ width:90%;
+}  */
+.skills .max-width .contents-4 .column-right .java::before{
+  width:90%;
+  }
+.skills .max-width .contents-4 .column-right .autocad::before{
+width:80%;
+}
+.skills .max-width .contents-4 .column-right .stock::before{
+width:30%;
+}
+.skills .max-width .contents-4 .column-right .sql::before{
+width:70%;
+}
+.skills .max-width .contents-4 .column-right .c::before{
+width:90%;
+}
+.skills .max-width .contents-4 .column-right .html::before{
+width:70%;
+}
+.skills .max-width .contents-4 .column-right .css::before{
+width:60%;
+}
+.skills .max-width .contents-4 .column-right .js::before{
+width:30%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width: 947px){
+.max-width 
+{
+  padding: 0 50px;
+}
+.nav-div {
+  position: fixed;
+  height:100vh;
+  width:100%;
+  left:0;
+  top:0;
+  background:#111;
+  text-align: center;
+  list-style: outside;
+}
+.nav-div li {
+  display: block;
+  }
+.nav-div li a{
+display: inline-block;
+margin: 20px 0;
+font-size: 25px;
+}
+}
